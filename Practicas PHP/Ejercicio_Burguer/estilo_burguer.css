@@ -1,0 +1,160 @@
+/* Reset básico y fondo general */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #1a0f0a; /* Fondo muy oscuro / marrón casi negro */
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Encabezados superiores fuera del cuadro */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: #ff6600; /* Naranja Smash & Burger */
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+header p {
+  color: #e0d0c0;
+  font-size: 0.95rem;
+}
+
+/* Tarjeta principal contenedora */
+.container {
+  background-color: #241711; /* Marrón oscuro para el fondo interior */
+  border: 1px solid #3d2b20;  /* Borde sutil */
+  border-radius: 12px;
+  padding: 25px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.container h2 {
+  color: #ff6600;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+/* Grupos de campos */
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: #ffffff;
+}
+
+/* Campos de entrada (inputs y selects) */
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  background-color: #120a06; /* Fondo negro/marrón para los campos */
+  border: 1px solid #3d2b20;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+/* Estilo para el input de pan que en la imagen es blanco */
+input[list="tipos-pan"] {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+input::placeholder {
+  color: #776655;
+}
+
+/* Checkbox estilo inline */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #ff6600;
+}
+
+/* Campo/recuadro para Punto de la carne */
+fieldset {
+  border: 1px solid #3d2b20;
+  border-radius: 8px;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+fieldset legend {
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 0 5px;
+}
+
+.radio-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.88rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+  accent-color: #0099ff; /* Azul como el botón activo 'Al punto' de la imagen */
+}
+
+/* Botón de envío */
+input[type="submit"] {
+  width: 100%;
+  background-color: #e65100; /* Naranja intenso del botón */
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff6600;
+}

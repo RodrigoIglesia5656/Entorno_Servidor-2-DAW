@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<link rel="stylesheet" href="estilo_burguer.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Hamburguesas</title>
+</head>
+
+<body>
+   <h2>Personaliza tu pedido</h2>
+
+<form action = procesar.php method ="get">
+  
+  <p>
+    <label for="nombre">Nombre del cliente:</label><br>
+    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez">
+  </p>
+
+  
+  <p>
+    <label for="cantidad">Cantidad de hamburguesas:</label><br>
+    <input type="number" id="cantidad" name="cantidad" min="1" value="1">
+  </p>
+
+  
+  <p>
+    <label for="carne">Tipo de carne:</label><br>
+    <select id="carne" name="carne">
+      <option value="" disabled selected>Selecciona una opción</option>
+      <option value="vacuno">Vacuno</option>
+      <option value="pollo">Pollo</option>
+      <option value="cerdo">Cerdo</option>
+      <option value="vegetariana">Vegetariana</option>
+    </select>
+  </p>
+
+  
+  <p>
+    <label for="pan">Tipo de pan:</label><br>
+    <input type="text" id="pan" name="pan" list="tipos-pan" placeholder="Ej. Brioche">
+    <datalist id="tipos-pan">
+      <option value="Brioche">
+      <option value="Sésamo">
+      <option value="Integral">
+      <option value="Sin Gluten">
+      <option value="Rústico">
+    </datalist>
+  </p>
+
+  
+  <fieldset>
+    <legend>Punto de la carne</legend>
+    <label>
+      <input type="radio" name="punto_carne" value="poco_hecha">
+      Poco hecha
+    </label><br>
+    
+    <label>
+      <input type="radio" name="punto_carne" value="al_punto" checked>
+      Al punto
+    </label><br>
+    
+    <label>
+      <input type="radio" name="punto_carne" value="bien_hecha">
+      Bien hecha
+    </label>
+  </fieldset>
+
+  <br>
+
+  
+  <p>
+    <label>
+      <input type="checkbox" name="extra_queso" value="si">
+      Añadir doble de queso
+    </label>
+  </p>
+
+
+  <p>
+    <input type="submit" value="Enviar pedido">
+  </p>
+</form>
+
+</body>
+
+</html>
