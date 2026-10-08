@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <form method="post" action="resultado.php">
+        <input type="text" name="num1" placeholder="Número 1">
+        <select name="operacion">
+            <option value="suma">+</option>
+            <option value="resta">-</option>
+            <option value="multiplicacion">x</option>
+            <option value="division">/</option>
+        </select>
+
+        <input type="text" name="num2" placeholder="Número 2">
+        <button type="submit" name="enviar">Calcular</button>
+    </form>
+</body>
+</html>
