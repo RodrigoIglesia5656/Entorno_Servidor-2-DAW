@@ -1,0 +1,29 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+/* Contenedor principal */
+.contenedor-imagen {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.imagen-aleatoria {
+    width: 400px;             
+    height: 300px;            
+    object-fit: cover;        
+    object-position: center;  
+    border-radius: 8px;       
+    max-width: 100%;         
+}
