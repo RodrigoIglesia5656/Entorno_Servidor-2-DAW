@@ -1,0 +1,33 @@
+body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+            margin-top: 50px;
+        }
+        .contenedor {
+            background-color: #ffffff;
+            display: inline-block;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+        img.dado {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            display: block;
+            margin: 20px auto;
+        }
+        a.boton {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: background-color 0.2s ease;
+        }
+        a.boton:hover {
+            background-color: #0056b3;
+        }
