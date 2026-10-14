@@ -41,8 +41,8 @@
 </head>
 <body>
     <?php
-    $inicio = 128000;
-    $fin =  128702;
+    $inicio = 0;
+    $fin = 1000;
     $columnas = 8;
 
     $total = $fin - $inicio +1;
