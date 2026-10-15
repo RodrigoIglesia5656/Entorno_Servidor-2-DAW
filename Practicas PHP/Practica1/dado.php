@@ -24,17 +24,6 @@ $indiceAleatorio = rand(0, count($imagenesDado) - 1);
 
 $imagenSeleccionada = $imagenesDado[$indiceAleatorio];
 ?>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lanzamiento de Dado</title>
-    <style>
-        
-    </style>
-</head>
-<body>
 
     <div class="contenedor">
         <h1>Resultado del dado</h1>
