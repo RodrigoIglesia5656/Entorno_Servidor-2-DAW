@@ -1,0 +1,150 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título */
+h1, .titulo-formulario {
+    color: #1a365d;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Contenedor del Formulario */
+form {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Etiquetas (Labels) */
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: #555555;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Inputs, Selects y Textareas */
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333333;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #4cae4c;
+}
+
+/* Estilo para el campo desplegable/múltiple */
+select[multiple] {
+    height: 110px;
+    background-color: #fff;
+}
+
+/* Botón de envío */
+input[type="submit"],
+button[type="submit"] {
+    width: 100%;
+    background-color: #42b74d;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 5px;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+    background-color: #369b40;
+}
+
+/* Mensajes de error */
+.error, .mensaje-error, .errores {
+    background-color: #2b2b2b; /* Fondo oscuro/negro */
+    color: #ff4d4d;            /* Texto rojo/destacado */
+    border-radius: 8px;
+    padding: 15px 20px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+.error ul, .mensaje-error ul, .errores ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.error li, .mensaje-error li, .errores li {
+    margin-bottom: 5px;
+}
+
+.error li:last-child, .mensaje-error li:last-child, .errores li:last-child {
+    margin-bottom: 0;
+}
+
+/* Tabla de ficha/resultados */
+table {
+    width: 100%;
+    max-width: 500px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 14px;
+}
+
+table th {
+    background-color: #1a365d;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9fafb;
+}

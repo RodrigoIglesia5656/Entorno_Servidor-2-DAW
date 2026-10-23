@@ -64,6 +64,7 @@
         </thead>
         <tbody>
             <?php foreach($productos as $miproducto): ?>
+                
             <tr>
                 <!-- NOMBRE -->
                 <?php if (empty($miproducto["nombre"])): ?>
@@ -86,6 +87,7 @@
                     <td><?= $miproducto["precio"] ?></td>
                 <?php endif; ?>
             </tr>
+
             <?php endforeach; ?>
         </tbody>
     </table>
