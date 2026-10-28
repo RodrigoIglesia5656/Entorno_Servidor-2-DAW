@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+form {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+    width: 30rem;
+    margin-top: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: #333;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.65rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.errores {
+    background-color: #333;
+    color: #ffcc00;
+    padding: 0.65rem 1rem;
+    border-radius: 0.5rem;
+    margin-top: 0.8rem;
+    width: 30rem;
+    text-align: left;
+    font-size: 0.95rem;
+    line-height: 1.3rem;
+}
+
+
+.table-container {
+    width: 32rem;
+    margin-top: 1.5rem;
+}
+
+
+table.ficha-evento {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+    border: 0.0625rem solid #ddd;
+}
+
+table.ficha-evento th,
+table.ficha-evento td {
+    border: 0.0625rem solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+    font-size: 0.95rem;
+    border-radius: 0;
+    background-clip: padding-box;
+}
+
+table.ficha-evento th {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: 600;
+}
+
+table.ficha-evento td {
+    background-color: #fafafa;
+}
+
+/* Redondear únicamente las 4 esquinas de la tabla */
+table.ficha-evento tr:first-child th:first-child {
+    border-top-left-radius: 0.5rem;
+}
+
+table.ficha-evento tr:first-child th:last-child {
+    border-top-right-radius: 0.5rem;
+}
+
+table.ficha-evento tr:last-child td:first-child {
+    border-bottom-left-radius: 0.5rem;
+}
+
+table.ficha-evento tr:last-child td:last-child {
+    border-bottom-right-radius: 0.5rem;
+}
